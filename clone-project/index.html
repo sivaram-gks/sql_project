@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airbnb Homes Clone</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./globe.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-icon"><img src="./Images/airlogo2.jpeg" alt=""></span>
+      <span class="logo-text">airbnb</span>
+    </div>
+
+    <nav class="nav-tabs">
+      <div class="tab active"><a href="./index.html"><img src="./Images/home.jpeg" alt="img"> Homes</a></div>
+      <div class="tab"><a href="./experience.html"><img src="./Images/airbollon.jpeg" alt="">Experiences </a></div>
+      <div class="tab"><a href="./service.html"><img src="./Images/bell.jpeg" alt="">Services </a></div>
+    </nav>
+
+    <div class="nav-right">
+      <span>
+        <a href="#hostModal" class="become">Become a host</a>
+      </span>
+      <div class="icon"><a href="#hostModal2">🌐</a></div>
+      <div class="icon">☰</div>
+    </div>
+  </header>
+
+  <div class="globe-overlay" id="hostModal">
+    <div class="globe-model">
+
+      <!-- Close -->
+      <a href="#" class="close">✕</a>
+
+      <!-- Title -->
+      <h1 class="modal-title">What would you like to host?</h1>
+
+      <!-- Options -->
+      <div class="host-options">
+
+        <div class="host-card">
+          <img src="./Images/home.jpeg" alt="Home">
+          <p>Home</p>
+        </div>
+
+        <div class="host-card">
+          <img src="./Images/airbollon.jpeg" alt="Experience">
+          <p>Experience</p>
+        </div>
+
+        <div class="host-card">
+          <img src="./Images/bell.jpeg" alt="Service">
+          <p>Service</p>
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer">
+        <button class="next-btn" disabled>Next</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- globe icon -->
+  <div class="overlay" id="hostModal2">
+    <div class="modal">
+
+      <!-- HEADER -->
+      <div class="modal-header">
+        <a href="#" class="close">✕</a>
+
+        <div class="tabs">
+          <span class="active">Language and region</span>
+          <span>Currency</span>
+        </div>
+      </div>
+
+      <!-- BODY -->
+      <div class="modal-body">
+
+        <!-- TRANSLATION -->
+        <div class="translation-box">
+          <div>
+            <h4>Translation</h4>
+            <p>Automatically translate descriptions and reviews to English.</p>
+          </div>
+
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <h3>Suggested languages and regions</h3>
+
+        <div class="suggested">
+          <div><strong>English</strong><span>United States</span></div>
+          <div><strong>English</strong><span>United Kingdom</span></div>
+          <div><strong>English</strong><span>Australia</span></div>
+          <div><strong>हिन्दी</strong><span>भारत</span></div>
+          <div><strong>ಕನ್ನಡ</strong><span>ಭಾರತ</span></div>
+        </div>
+
+        <h3>Choose a language and region</h3>
+
+        <div class="languages">
+          <div class="lang active"><strong>English</strong><span>India</span></div>
+          <div class="lang"><strong>Deutsch</strong><span>Deutschland</span></div>
+          <div class="lang"><strong>Español</strong><span>España</span></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <section class="search-section">
+    <div class="search-bar">
+      <div class="search-item">
+        <strong>Where</strong>
+        <span>Search destinations</span>
+      </div>
+      <div class="divider"></div>
+      <div class="search-item">
+        <strong>When</strong>
+        <span>Add dates</span>
+      </div>
+      <div class="divider"></div>
+      <div class="search-item">
+        <strong>Who</strong>
+        <span>Add guests</span>
+      </div>
+      <button class="search-btn">🔍</button>
+    </div>
+  </section>
+
+  <section class="homes-section">
+    <div class="section-header">
+      <h2>Popular homes in Bengaluru</h2>
+      <span class="arrow">➜</span>
+    </div>
+
+    <div class="homes-row">
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <a href="./testing.html"><img src="./Images/hb1.avif" alt=""></a>
+        <h4>Apartment in Narayanpur</h4>
+        <p>₹3,764 for 2 nights · ★ 4.97</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hb2.avif">
+        <h4>Flat in Bengaluru</h4>
+        <p>₹3,650 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hb3.avif">
+        <h4>Apartment in Koramangala</h4>
+        <p>₹6,504 for 2 nights · ★ 4.93</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hb4.avif">
+        <h4>Flat in Bengaluru</h4>
+        <p>₹2,469 for 2 nights · ★ 4.92</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hb5.avif">
+        <h4>Flat in Bellandur</h4>
+        <p>₹5,706 for 2 nights · ★ 4.83</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/hb6.avif">
+        <h4>Hotel in Bengaluru</h4>
+        <p>₹2,014 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <span class="badge">Guest favourite</span>
+        <img src="./Images/hb7.avif">
+        <h4>Hotel in Koramangala</h4>
+        <p>₹6,391 for 2 nights · ★ 4.89</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <span class="badge">Guest favourite</span>
+        <img src="./Images/hb8.avif">
+        <h4>Tiny home in Bengaluru</h4>
+        <p>₹5,250 for 2 nights · ★ 4.89</p>
+      </div>
+
+      <div class="see-all-card">
+        <div class="stacked-images">
+          <img src="./Images/hb3.avif" class="img back" alt="">
+          <img src="./Images/hb2.avif" class="img middle" alt="">
+          <img src="./Images/hb1.avif" class="img front" alt="">
+        </div>
+        <p>See all</p>
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <section class="homes-section">
+    <div class="section-header">
+      <h2>Available in Puducherry this weekend</h2>
+      <span class="arrow">➜</span>
+    </div>
+
+    <div class="homes-row">
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/hp1.avif" alt="">
+        <h4>Guest house in Puducherry</h4>
+        <p>₹18,000 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hp2.avif" alt="">
+        <h4>Hotel in Auroville</h4>
+        <p>₹15,998 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hp3.avif" alt="">
+        <h4>Hotel in Royapudupakkam</h4>
+        <p>₹16,000 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hp4.avif" alt="">
+        <h4>Home in Bommayapalayam</h4>
+        <p>₹34,236 for 2 nights · ★ 4.87</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/hp5.avif" alt="">
+        <h4>Home in Puducherry</h4>
+        <p>₹12,871 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/hp6.avif" alt="">
+        <h4>Room in Puducherry</h4>
+        <p>₹16,000 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/hp7.avif" alt="">
+        <h4>Villa in Puducherry</h4>
+        <p>₹34,350 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/hp8.avif" alt="">
+        <h4>Room in Puducherry</h4>
+        <p>₹6,848 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="see-all-card">
+        <div class="stacked-images">
+          <img src="./Images/hp3.avif" class="img back" alt="">
+          <img src="./Images/hp2.avif" class="img middle" alt="">
+          <img src="./Images/hp1.avif" class="img front" alt="">
+        </div>
+        <p>See all</p>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="homes-section">
+    <div class="section-header">
+      <h2>Stay in Hyderabad</h2>
+      <span class="arrow">➜</span>
+    </div>
+
+    <div class="homes-row">
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/hh1.avif" alt="">
+        <h4>Flat in Hyderabad</h4>
+        <p>₹11,412 for 2 nights · ★ 4.89</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hh2.avif" alt="">
+        <h4>Flat in Hyderabad</h4>
+        <p>₹4,791 for 2 nights · ★ 4.96</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/hh3.avif" alt="">
+        <h4>Flat in Hyderabad</h4>
+        <p>₹4,154 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/hh4.avif" alt="">
+        <h4>Place to stay in Hyderabad</h4>
+        <p>₹3,308 for 2 nights · ★ 4.85</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hh5.avif" alt="">
+        <h4>Apartment in Hyderabad</h4>
+        <p>₹7,120 for 2 nights · ★ 4.97</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/hh6.avif" alt="">
+        <h4>Flat in Hyderabad</h4>
+        <p>₹9,129 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hh7.avif" alt="">
+        <h4>Flat in Kondapur</h4>
+        <p>₹4,571 for 2 nights · ★ 4.91</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hh8.avif" alt="">
+        <h4>Apartment in Hyderabad</h4>
+        <p>₹5,763 for 2 nights · ★ 4.95</p>
+      </div>
+
+      <div class="see-all-card">
+        <div class="stacked-images">
+          <img src="./Images/hh3.avif" class="img back" alt="">
+          <img src="./Images/hh2.avif" class="img middle" alt="">
+          <img src="./Images/hh1.avif" class="img front" alt="">
+        </div>
+        <p>See all</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="homes-section">
+    <div class="section-header">
+      <h2>Available next month in South Goa</h2>
+      <span class="arrow">➜</span>
+    </div>
+
+    <div class="homes-row">
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hsg1.avif" alt="">
+        <h4>Flat in Colva</h4>
+        <p>₹7,682 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hsg2.avif" alt="">
+        <h4>Room in Cansaulim</h4>
+        <p>₹2,968 for 2 nights · ★ 4.95</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/hsg3.avif" alt="">
+        <h4>Apartment in Canacona</h4>
+        <p>₹5,478 for 2 nights · ★ 4.86</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hsg4.avif" alt="">
+        <h4>Flat in Chauri</h4>
+        <p>₹16,433 for 2 nights · ★ 4.95</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hsg5.avif" alt="">
+        <h4>Apartment in Chauri</h4>
+        <p>₹9,244 for 2 nights · ★ 4.93</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hsg6.avif" alt="">
+        <h4>Flat in Canacona</h4>
+        <p>₹5,010 for 2 nights · ★ 4.88</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/hsg7.avif" alt="">
+        <h4>Flat in Majorda</h4>
+        <p>₹10,271 for 2 nights · ★ 4.87</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hsg8.avif" alt="">
+        <h4>Apartment in Orlim</h4>
+        <p>₹6,570 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="see-all-card">
+        <div class="stacked-images">
+          <img src="./Images/hsg3.avif" class="img back" alt="">
+          <img src="./Images/hsg2.avif" class="img middle" alt="">
+          <img src="./Images/hsg1.avif" class="img front" alt="">
+        </div>
+        <p>See all</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="homes-section">
+    <div class="section-header">
+      <h2>Homes in North Goa</h2>
+      <span class="arrow">➜</span>
+    </div>
+
+    <div class="homes-row">
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hng1.avif" alt="">
+        <h4>Flat in Candolim</h4>
+        <p>₹12,702 for 2 nights · ★ 4.9</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hng2.avif" alt="">
+        <h4>Villa in Ribandar</h4>
+        <p>₹8,673 for 2 nights · ★ 4.93</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hng3.avif" alt="">
+        <h4>Flat in North Goa</h4>
+        <p>₹6,619 for 2 nights · ★ 4.88</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hng4.avif" alt="">
+        <h4>Flat in Arpora</h4>
+        <p>₹8,673 for 2 nights · ★ 4.84</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/hng5.avif" alt="">
+        <h4>Apartment in Calangute</h4>
+        <p>₹14,836 for 2 nights · ★ 4.92</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hng6.avif" alt="">
+        <h4>Apartment in Candolim</h4>
+        <p>₹7,610 for 2 nights · ★ 4.97</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hng7.avif" alt="">
+        <h4>Flat in Siolim</h4>
+        <p>₹9,242 for 2 nights · ★ 4.96</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hng8.avif" alt="">
+        <h4>Home in Anjuna</h4>
+        <p>₹5,000 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="see-all-card">
+        <div class="stacked-images">
+          <img src="./Images/hng3.avif" class="img back" alt="">
+          <img src="./Images/hng2.avif" class="img middle" alt="">
+          <img src="./Images/hng1.avif" class="img front" alt="">
+        </div>
+        <p>See all</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="homes-section">
+    <div class="section-header">
+      <h2>Available in Dindigul this weekend</h2>
+      <span class="arrow">➜</span>
+    </div>
+
+    <div class="homes-row">
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hd1.avif" alt="">
+        <h4>Nature lodge in Kodaikkanal</h4>
+        <p>₹10,800 for 2 nights · ★ 4.96</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hd2.avif" alt="">
+        <h4>Room in Kodaikkanal</h4>
+        <p>₹19,401 for 2 nights · ★ 4.91</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hd3.avif" alt="">
+        <h4>Nature lodge in Pallangi</h4>
+        <p>₹36,518 for 2 nights · ★ 4.9</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hd4.avif" alt="">
+        <h4>Home in Dharapuram</h4>
+        <p>₹4,337 for 2 nights · ★ 4.88</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/hd5.avif" alt="">
+        <h4>Home in Kodaikkanal</h4>
+        <p>₹36,518 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/hd6.avif" alt="">
+        <h4>Campsite in Kodaikkanal</h4>
+        <p>₹7,200 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hd7.avif" alt="">
+        <h4>Home in Palani</h4>
+        <p>₹2,968 for 2 nights · ★ 4.83</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/hd8.avif" alt="">
+        <h4>Cottage in Kodaikkanal</h4>
+        <p>₹23,395 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="see-all-card">
+        <div class="stacked-images">
+          <img src="./Images/hd3.avif" class="img back" alt="">
+          <img src="./Images/hd2.avif" class="img middle" alt="">
+          <img src="./Images/hd1.avif" class="img front" alt="">
+        </div>
+        <p>See all</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="homes-section">
+    <div class="section-header">
+      <h2>Places to stay in Ernakulam</h2>
+      <span class="arrow">➜</span>
+    </div>
+
+    <div class="homes-row">
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/he1.avif" alt="">
+        <h4>Place to stay in Ernakulam</h4>
+        <p>₹3,082 for 2 nights · ★ 4.97</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/he2.avif" alt="">
+        <h4>Apartment in Ernakulam</h4>
+        <p>₹14,379 for 2 nights · ★ 4.97</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/he3.avif" alt="">
+        <h4>Villa in Ernakulam</h4>
+        <p>₹3,060 for 2 nights · ★ 4.8</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/he4.avif" alt="">
+        <h4>Home in Kerala</h4>
+        <p>₹3,424 for 2 nights · ★ 4.98</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/he5.avif" alt="">
+        <h4>Apartment in Kochi</h4>
+        <p>₹14,836 for 2 nights · ★ 4.98</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/he6.avif" alt="">
+        <h4>Room in Ernakulam</h4>
+        <p>₹3,424 for 2 nights · ★ 4.97</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/he7.avif" alt="">
+        <h4>Home in Kochi</h4>
+        <p>₹18,231 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/he8.avif" alt="">
+        <h4>Flat in Ernakulam</h4>
+        <p>₹5,912 for 2 nights · ★ 5.0</p>
+      </div>
+
+
+      <div class="see-all-card">
+        <div class="stacked-images">
+          <img src="./Images/ed3.avif" class="img back" alt="">
+          <img src="./Images/ed2.avif" class="img middle" alt="">
+          <img src="./Images/ed1.avif" class="img front" alt="">
+        </div>
+        <p>See all</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="homes-section">
+    <div class="section-header">
+      <h2>Check out homes in Thiruvananthapuram</h2>
+      <span class="arrow">➜</span>
+    </div>
+
+    <div class="homes-row">
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/ht1.avif" alt="">
+        <h4>Apartment in Thiruvananthapuram</h4>
+        <p>₹5,022 for 2 nights · ★ 4.9</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/ht2.avif" alt="">
+        <h4>Room in Thiruvananthapuram</h4>
+        <p>₹3,413 for 2 nights · ★ 4.97</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/ht3.avif" alt="">
+        <h4>Flat in Akkulam</h4>
+        <p>₹11,926 for 2 nights · ★ 4.96</p>
+      </div>
+
+      <div class="home-card">
+        <span class="heart">♡</span>
+        <img src="./Images/ht4.avif" alt="">
+        <h4>Flat in Pattom</h4>
+        <p>₹5,935 for 2 nights · ★ 4.93</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/ht5.avif" alt="">
+        <h4>Room in Thiruvananthapuram</h4>
+        <p>₹4,223 for 2 nights · ★ 4.9</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/ht6.avif" alt="">
+        <h4>Guest suite in Sasthamangalam</h4>
+        <p>₹3,538 for 2 nights · ★ 4.83</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/ht7.avif" alt="">
+        <h4>Tiny home in Thiruvananthapuram</h4>
+        <p>₹4,337 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/ht7.avif" alt="">
+        <h4>Home in Thiruvananthapuram</h4>
+        <p>₹2,853 for 2 nights · ★ 4.92</p>
+      </div>
+
+      <div class="see-all-card">
+        <div class="stacked-images">
+          <img src="./Images/ht3.avif" class="img back" alt="">
+          <img src="./Images/ht2.avif" class="img middle" alt="">
+          <img src="./Images/ht1.avif" class="img front" alt="">
+        </div>
+        <p>See all</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="homes-section">
+    <div class="section-header">
+      <h2>Popular homes in The Nilgiris</h2>
+      <span class="arrow">➜</span>
+    </div>
+
+    <div class="homes-row">
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hn1.avif" alt="">
+        <h4>Home in The Nilgiris</h4>
+        <p>₹27,103 for 2 nights · ★ 4.96</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hn2.avif" alt="">
+        <h4>Villa in The Nilgiris</h4>
+        <p>₹23,166 for 2 nights · ★ 4.99</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge blue">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hn3.avif" alt="">
+        <h4>Home in Adikaratti</h4>
+        <p>₹22,824 for 2 nights · ★ 4.98</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hn4.avif" alt="">
+        <h4>Room in Gudalur</h4>
+        <p>₹5,706 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hn5.avif" alt="">
+        <h4>Villa in The Nilgiris</h4>
+        <p>₹23,737 for 2 nights · ★ 5.0</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hn6.avif" alt="">
+        <h4>Room in Coonoor</h4>
+        <p>₹7,598 for 2 nights · ★ 4.96</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hn7.avif" alt="">
+        <h4>Villa in Coonoor</h4>
+        <p>₹34,236 for 2 nights · ★ 4.91</p>
+      </div>
+
+      <div class="home-card">
+        <span class="badge">Guest favourite</span>
+        <span class="heart">♡</span>
+        <img src="./Images/hn8.avif" alt="">
+        <h4>Villa in Kotagiri</h4>
+        <p>₹35,337 for 2 nights · ★ 4.89</p>
+      </div>
+
+      <div class="see-all-card">
+        <div class="stacked-images">
+          <img src="./Images/hn3.avif" class="img back" alt="">
+          <img src="./Images/hn2.avif" class="img middle" alt="">
+          <img src="./Images/hn1.avif" class="img front" alt="">
+        </div>
+        <p>See all</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <h3>Inspiration for future getaways</h3>
+
+      <div class="footer-tabs">
+        <span class="active">Popular</span>
+        <span>Arts & culture</span>
+        <span>Beach</span>
+        <span>Mountains</span>
+        <span>Outdoors</span>
+        <span>Things to do</span>
+      </div>
+
+      <div class="footer-grid">
+        <div>
+          <h4>Pocono Mountains</h4>
+          <p>Cabin rentals</p>
+
+          <h4>Cleveland</h4>
+          <p>House rentals</p>
+
+          <h4>San Diego</h4>
+          <p>Flat rentals</p>
+        </div>
+
+        <div>
+          <h4>Charlotte</h4>
+          <p>Cabin rentals</p>
+
+          <h4>West Palm Beach</h4>
+          <p>Monthly Rentals</p>
+
+          <h4>Daytona Beach</h4>
+          <p>Villa rentals</p>
+        </div>
+
+        <div>
+          <h4>Athens</h4>
+          <p>House rentals</p>
+
+          <h4>San Antonio</h4>
+          <p>Cabin rentals</p>
+
+          <h4>Memphis</h4>
+          <p>House rentals</p>
+        </div>
+
+        <div>
+          <h4>Detroit</h4>
+          <p>Apartment rentals</p>
+
+          <h4>Brooklyn</h4>
+          <p>Flat rentals</p>
+
+          <h4>San Juan</h4>
+          <p>Flat rentals</p>
+        </div>
+
+        <div>
+          <h4>Albuquerque</h4>
+          <p>Flat rentals</p>
+
+          <h4>Amsterdam</h4>
+          <p>Cabin rentals</p>
+
+          <h4>Playa del Carmen</h4>
+          <p>Monthly Rentals</p>
+        </div>
+
+        <div>
+          <h4>Barcelona</h4>
+          <p>Apartment rentals</p>
+
+          <h4>Tokyo</h4>
+          <p>Holiday rentals</p>
+
+          <p class="show-more">Show more ▾</p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+      <div class="footer-links">
+        <div>
+          <h5>Support</h5>
+          <a href="#">Help Centre</a>
+          <a href="#">Get help with a safety issue</a>
+          <a href="#">AirCover</a>
+          <a href="#">Anti-discrimination</a>
+          <a href="#">Disability support</a>
+          <a href="#">Cancellation options</a>
+          <a href="#">Report neighbourhood concern</a>
+        </div>
+
+        <div>
+          <h5>Hosting</h5>
+          <a href="#">Airbnb your home</a>
+          <a href="#">Airbnb your experience</a>
+          <a href="#">Airbnb your service</a>
+          <a href="#">AirCover for Hosts</a>
+          <a href="#">Hosting resources</a>
+          <a href="#">Community forum</a>
+          <a href="#">Hosting responsibly</a>
+          <a href="#">Join a free Hosting class</a>
+          <a href="#">Find a co-host</a>
+          <a href="#">Refer a host</a>
+        </div>
+
+        <div>
+          <h5>Airbnb</h5>
+          <a href="#">2025 Summer Release</a>
+          <a href="#">Newsroom</a>
+          <a href="#">Careers</a>
+          <a href="#">Investors</a>
+          <a href="#">Airbnb.org emergency stays</a>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <p>© 2025 Airbnb, Inc. · Privacy · Terms · Company details</p>
+        <div class="footer-lang">
+          <span>🌐 English (IN)</span>
+          <span>₹ INR</span>
+          <div class="social-icons">
+            <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="x"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
